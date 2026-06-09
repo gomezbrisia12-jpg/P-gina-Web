@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#b8d9e8;
+    color:#000;
+}
+
+header{
+    background:#9b5b5b;
+    color:white;
+    padding:30px;
+}
+
+.contenedor-header{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.foto-perfil{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+}
+
+.datos h1{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+
+nav{
+    background:#7f4040;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav ul li a{
+    display:block;
+    padding:15px 20px;
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    background:#d9b26f;
+    color:black;
+}
+
+.seccion{
+   width:90%;
+    margin:auto;
+    padding:30px 0;
+}
+
+.parcial{
+    background:white;
+    margin-bottom:30px;
+    padding:40px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+.parcial a{
+    text-decoration:none;
+    color:#8d5a5a;
+    font-size:35px;
+    font-weight:bold;
+}
+
+
+.actividad{
+    background:white;
+    margin-bottom:30px;
+    padding:20px;
+    border-radius:10px;
+    display:flex;
+    gap:20px;
+    align-items:center;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+.actividad img{
+    width:250px;
+    border-radius:10px;
+}
+
+.contenido{
+    flex:1;
+}
+
+.contenido h3{
+    color:#8d5a5a;
+    margin-bottom:10px;
+}
+
+.seccion p{
+    margin-bottom:15px;
+    text-align:justify;
+    line-height:1.6;
+}
+
+.seccion a{
+    background:#8d5a5a;
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:5px;
+}
+
+.seccion a:hover{
+    background:#d6b06d;
+    color:black;
+}
+
+
+
+footer{
+    background:#8d5a5a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+
+@media(max-width:768px){
+
+    .actividad{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .actividad img{
+        width:100%;
+    }
+
+}
